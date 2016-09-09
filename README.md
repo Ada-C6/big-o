@@ -13,7 +13,7 @@ Give the efficiency of each of the following code snippets.
 
 ### Problems for you
 
-Snippet 1 - Big O:
+Snippet 1 - Big O: O(n) (linear) -- this is linear because the amount of time it takes to run this algorithm will increase or decrease at a consistent rate depending on whether the array grows or shrinks.
 ```ruby
 def largest?(array, value)
   array.each do |item|
@@ -23,7 +23,7 @@ def largest?(array, value)
 end
 ```
 
-Snippet 2 - Big O:
+Snippet 2 - Big O: O(n) (linear)  -- both of these loops are linear for the reasons in Snippet 1, and when we have two not nested things to evaluate we take the one with the greatest complexity.
 ```ruby
 def info_dump(customers)
   puts "Customer Names: "
@@ -37,14 +37,14 @@ def info_dump(customers)
 end
 ```
 
-Snippet 3 - Big O:
+Snippet 3 - Big O: O(1) (constant) -- this is constant because the algorithm will only ever check the first index of the array, no matter how long the array is.
 ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
 
-Snippet 4 - Big O:
+Snippet 4 - Big O: O(n^2) (quadratic) -- this is quadratic because the loops are nested and both are O(n) on their own (resulting in an overall complexity of O(n^2) for this algorithm.)
 ```ruby
 def duplicates?(array)
   array.each_with_index do |item1, index1|
@@ -57,7 +57,7 @@ def duplicates?(array)
 end
 ```
 
-Snippet 5 - Big O:
+Snippet 5 - Big O: O(n * m) (unsure of official name for this complexity) -- my guess would be quadratic since Crystal mentioned it can be easy to accidently assign these cases as O(n^2) complexity.
 ```ruby
 words = [chocolate, coconut, rainbow]
 endings = [cookie, pie, waffle]
@@ -69,7 +69,7 @@ words.each do |word|
 end
 ```
 
-Snippet 6 - Big O:
+Snippet 6 - Big O: O(n) (linear) -- this is linear for the reasons in Snippet 1. (It makes no difference that it is run in-line here.)
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
@@ -78,7 +78,7 @@ def print_array(array)
 end
 ```
 
-Snippet 7 - Big O:
+Snippet 7 - Big O: O(n^2) (quadratic) -- this is quadratic for the reasons in Snippet 4. (Also I wrote down insertion as an example of quadratic in my notes based on Crystal's lecture.)
 ```ruby
 # this is insertion sort
 (2..num.length).each do |j|
@@ -92,7 +92,7 @@ Snippet 7 - Big O:
 end
 ```
 
-Snippet 8 - Big O:
+Snippet 8 - Big O: O(n^2) (quadratic) -- this is quadratic for the reasons in Snippet 4. (Also I wrote down selection as an example of quadratic in my notes based on Crystal's lecture.)
 ```ruby
 # this is selection sort
 n.times do |i|
