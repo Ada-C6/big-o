@@ -13,7 +13,7 @@ Give the efficiency of each of the following code snippets.
 
 ### Problems for you
 
-Snippet 1 - Big O:
+Snippet 1 - Big O: O(n) - for the .each method, as the array grows, the amount of time it takes to iterate through the loop is linear
 ```ruby
 def largest?(array, value)
   array.each do |item|
@@ -23,7 +23,7 @@ def largest?(array, value)
 end
 ```
 
-Snippet 2 - Big O:
+Snippet 2 - Big O: O(n) - For each of these loops, the amount of time increases in a linear fashion as the array grows, but because they are not nested, their values are added, so O(n) + O(n) = O(2n), and the constant, 2, is dropped
 ```ruby
 def info_dump(customers)
   puts "Customer Names: "
@@ -37,14 +37,14 @@ def info_dump(customers)
 end
 ```
 
-Snippet 3 - Big O:
+Snippet 3 - Big O: O(1) - This is only evaluating the first element of the array, so it does not matter how large the array becomes.
 ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
 
-Snippet 4 - Big O:
+Snippet 4 - Big O: O(n^2) - Each .each loop has an efficiency of O(n); because they are nested, their values are multiplied, and O(n) * O(n) = O(n^2)
 ```ruby
 def duplicates?(array)
   array.each_with_index do |item1, index1|
@@ -57,7 +57,7 @@ def duplicates?(array)
 end
 ```
 
-Snippet 5 - Big O:
+Snippet 5 - Big O: O(1) = If I'm interpreting this correctly, these are effectively .times loops because the size of the arrays is defined as words.length = 3 and endings.length = 3, and two nested O(1) loops just gives an overall O(1) value. However, if the size of words or endings was a variable, this would end up being an O(n^2) efficiency, as described in Snippet 4 above.
 ```ruby
 words = [chocolate, coconut, rainbow]
 endings = [cookie, pie, waffle]
@@ -69,7 +69,7 @@ words.each do |word|
 end
 ```
 
-Snippet 6 - Big O:
+Snippet 6 - Big O: O(n) - As the size of the array changes in the print_array method, the amount of time it takes to run will increase or decrease linearly.
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
@@ -78,7 +78,7 @@ def print_array(array)
 end
 ```
 
-Snippet 7 - Big O:
+Snippet 7 - Big O: O(n^2) - There are two nested loops (.each and while), each with a Big O of O(n). Because they are nested, the total value is O(n) * O(n) = O(n^2). Also, you said during class that an insertion sort has a Big O of O(n^2).
 ```ruby
 # this is insertion sort
 (2..num.length).each do |j|
@@ -92,7 +92,7 @@ Snippet 7 - Big O:
 end
 ```
 
-Snippet 8 - Big O:
+Snippet 8 - Big O: O(n^2) - Because the .times loop runs for 'n' times, I'm assuming that this is a variable that changes with the size of an array, so it's basically a .each loop. And while I haven't seen it before, the .upto(n) looks like it also acts sort of like an .each loop. Both of these have a Big O of O(n), and when multiplied together, it evaluates to O(n^2).
 ```ruby
 # this is selection sort
 n.times do |i|
