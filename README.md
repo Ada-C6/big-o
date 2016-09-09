@@ -13,7 +13,7 @@ Give the efficiency of each of the following code snippets.
 
 ### Problems for you
 
-Snippet 1 - Big O:
+Snippet 1 - Big O: O(n) - single loop
 ```ruby
 def largest?(array, value)
   array.each do |item|
@@ -23,7 +23,7 @@ def largest?(array, value)
 end
 ```
 
-Snippet 2 - Big O:
+Snippet 2 - Big O: O(n) - two sequential loops
 ```ruby
 def info_dump(customers)
   puts "Customer Names: "
@@ -37,14 +37,14 @@ def info_dump(customers)
 end
 ```
 
-Snippet 3 - Big O:
+Snippet 3 - Big O: Constant
 ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
 
-Snippet 4 - Big O:
+Snippet 4 - Big O: O(n^2) - two sequential nested loops
 ```ruby
 def duplicates?(array)
   array.each_with_index do |item1, index1|
@@ -57,7 +57,7 @@ def duplicates?(array)
 end
 ```
 
-Snippet 5 - Big O:
+Snippet 5 - Big O: Constant - two nested loops but each are finite with a known number.
 ```ruby
 words = [chocolate, coconut, rainbow]
 endings = [cookie, pie, waffle]
@@ -69,7 +69,7 @@ words.each do |word|
 end
 ```
 
-Snippet 6 - Big O:
+Snippet 6 - Big O: Constant - finite loop with known number of elements.
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
@@ -78,7 +78,7 @@ def print_array(array)
 end
 ```
 
-Snippet 7 - Big O:
+Snippet 7 - Big O: O(n^2) - two nested loops with unknown number of elements.
 ```ruby
 # this is insertion sort
 (2..num.length).each do |j|
@@ -92,7 +92,7 @@ Snippet 7 - Big O:
 end
 ```
 
-Snippet 8 - Big O:
+Snippet 8 - Big O: O(n^2) - two nested loops with unknown number of elements. 
 ```ruby
 # this is selection sort
 n.times do |i|
