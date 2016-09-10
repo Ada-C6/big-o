@@ -86,7 +86,7 @@ end
 
 Snippet 7 - Big O: **O(N^2)**. I know this because you said it in lecture, but I will try to justify why it is the case based on the code as well! The basic answer is that we have two nested loops, which generally correlates to quadratic time. The worst case for selection sort is that the elements are in completely backwards order. Each element must be moved through all the preceding elements to find its place. Here, each element effectively has to move through all the other elements to find its place, although this is not literally true except for the last element in the worst case. However, this edge case illustrates why insertion sort would be considered an O(N^2) algorithm.
 
-Note: for this to work, I think we need the outer loop to be exclusive instead of inclusive of the upper bound—(2…num.length) rather than (2..num.length)—so that it does not try to access num[num.length]. Also, I think the comparison on the inner loop needs to be i >= 0 if we want the first array element to be correctly sorted along with the others. Not relevant at all for the big-O question, but could cause confusion if people try to run it like me. Runs perfectly with these minor edits :)
+Note: for this to work, I think we need the outer loop to be exclusive instead of inclusive of the upper bound—(2…num.length) rather than (2..num.length)—so that it does not try to access num[num.length]. Also, I think the comparison on the inner loop needs to be i >= 0 if we want the first array element to be correctly sorted along with the others. Not relevant at all for the big-O question, but could cause confusion if people try to run it like me. Runs perfectly with these edits :)
 
 ```ruby
 # this is insertion sort
