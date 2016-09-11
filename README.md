@@ -103,8 +103,8 @@ Snippet 7 - Big O:
     end
     num[i+1] = key
 end
-puts "O(1)* O(n)"
-puts "Answer: O(n)"
+puts "O(1)* O(log n)"
+puts "Answer: O(log n)"
 ```
 
 Snippet 8 - Big O:
@@ -117,6 +117,6 @@ n.times do |i|
   end
   a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
-puts "Answer: O(n) * O(n) * O(1)"
-puts "Answer: O(n^2)"
+puts "Answer: O(1) * O(log n)"
+puts "Answer: O(log n)"
 ```
