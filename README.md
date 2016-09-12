@@ -78,7 +78,7 @@ def print_array(array)
 end
 ```
 
-Snippet 7 - Big O: O(n^2)
+Snippet 7 - Big O: O(n^2) - each loop is O(n) => multiply O(n * n)
 ```ruby
 # this is insertion sort
 (2..num.length).each do |j|
@@ -92,7 +92,7 @@ Snippet 7 - Big O: O(n^2)
 end
 ```
 
-Snippet 8 - Big O: O(n^2)
+Snippet 8 - Big O: O(n^2) - each loop is O(n) => multiply O(n * n)
 ```ruby
 # this is selection sort
 n.times do |i|
