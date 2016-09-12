@@ -23,7 +23,7 @@ def largest?(array, value)
 end
 ```
 
-Snippet 2 - Big O:
+Snippet 2 - Big O: O(n) - Linear. This code will iterate through a hash of customers twice. Runtime dependent on number of key-value pairs in hash.
 ```ruby
 def info_dump(customers)
   puts "Customer Names: "
@@ -37,7 +37,7 @@ def info_dump(customers)
 end
 ```
 
-Snippet 3 - Big O:
+Snippet 3 - Big O: O(1) - Constant. Returns a boolean regarding the first element of an array. Runtime is the same no matter the length of the array.
 ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
@@ -57,7 +57,8 @@ def duplicates?(array)
 end
 ```
 
-Snippet 5 - Big O:
+Snippet 5 - Big O: O(n^2) - Quadratic. Iterates through one array. For each element of the array, iterates through a second array. Runtime is dependent on length of first array times length of second array.
+
 ```ruby
 words = [chocolate, coconut, rainbow]
 endings = [cookie, pie, waffle]
@@ -69,7 +70,7 @@ words.each do |word|
 end
 ```
 
-Snippet 6 - Big O:
+Snippet 6 - Big O: O(n) - Linear. Runs through the array one time. Runtime dependent on length of array.
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
@@ -78,7 +79,7 @@ def print_array(array)
 end
 ```
 
-Snippet 7 - Big O:
+Snippet 7 - Big O: Big O: O(n^2) - Quadratic
 ```ruby
 # this is insertion sort
 (2..num.length).each do |j|
@@ -92,7 +93,7 @@ Snippet 7 - Big O:
 end
 ```
 
-Snippet 8 - Big O:
+Snippet 8 - Big O: O(n^2) - Quadratic
 ```ruby
 # this is selection sort
 n.times do |i|
