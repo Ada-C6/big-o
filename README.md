@@ -1,19 +1,10 @@
-# Evaluating Efficiency
 
-1. Read [Big O Notation for Newbies with Ruby](http://www.datakicks.com/2016/06/04/big-o-notation.html)
-2. Work through [this quiz](http://www.codequizzes.com/computer-science/beginner/big-o-algorithms) on Big O. Try out the code snippets and read the answers.
-3. Do the assignment below and submit a PR with your answers.
-
-
-## Assignment - Determine the big O
-Give the efficiency of each of the following code snippets.
-
-### Examples
-[Examples](examples.md)
 
 ### Problems for you
 
-Snippet 1 - Big O:
+Snippet 1 - Big O: this is O(n) because the time to run will increase with each element added to the array! 
+
+
 ```ruby
 def largest?(array, value)
   array.each do |item|
@@ -23,7 +14,7 @@ def largest?(array, value)
 end
 ```
 
-Snippet 2 - Big O:
+Snippet 2 - Big O: this is O(2n) aka O(n) because the loops are not nestede!
 ```ruby
 def info_dump(customers)
   puts "Customer Names: "
@@ -37,14 +28,14 @@ def info_dump(customers)
 end
 ```
 
-Snippet 3 - Big O:
-```ruby
+Snippet 3 - Big O: this is O(1) because the time to access array[1] will not change no matter how large the array.
+ ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
 
-Snippet 4 - Big O:
+Snippet 4 - Big O: this is O(n^2) because there are two nested .each loops.
 ```ruby
 def duplicates?(array)
   array.each_with_index do |item1, index1|
@@ -57,7 +48,7 @@ def duplicates?(array)
 end
 ```
 
-Snippet 5 - Big O:
+Snippet 5 - Big O: this is O(n^2) because there are two nested .each loops.
 ```ruby
 words = [chocolate, coconut, rainbow]
 endings = [cookie, pie, waffle]
@@ -69,7 +60,7 @@ words.each do |word|
 end
 ```
 
-Snippet 6 - Big O:
+Snippet 6 - Big O: this is O(n) because the time to run will increase with each element added to the array 
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
@@ -78,7 +69,7 @@ def print_array(array)
 end
 ```
 
-Snippet 7 - Big O:
+Snippet 7 - Big O: this is O(n^2) because each number must be compared twice 
 ```ruby
 # this is insertion sort
 (2..num.length).each do |j|
@@ -92,7 +83,7 @@ Snippet 7 - Big O:
 end
 ```
 
-Snippet 8 - Big O:
+Snippet 8 - Big O: this is also O(n) because .times and .upto are nested
 ```ruby
 # this is selection sort
 n.times do |i|
