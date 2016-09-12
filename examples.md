@@ -1,3 +1,4 @@
+
 ## Examples
 
 Snippet EX-A - Big O: O(n) because as the data set size grows the amount of loop iterations grows linearly
