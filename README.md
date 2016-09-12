@@ -23,6 +23,8 @@ def largest?(array, value)
 end
 ```
 
+0(n) - worst case scenario must look at each item once.
+
 Snippet 2 - Big O:
 ```ruby
 def info_dump(customers)
@@ -37,12 +39,16 @@ def info_dump(customers)
 end
 ```
 
+O(n) because the two loops are not nested
+
 Snippet 3 - Big O:
 ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
+
+O(1) - constant
 
 Snippet 4 - Big O:
 ```ruby
@@ -57,6 +63,8 @@ def duplicates?(array)
 end
 ```
 
+O(n^2) - for each itme in the array, we have to loop over the entire array.
+
 Snippet 5 - Big O:
 ```ruby
 words = [chocolate, coconut, rainbow]
@@ -69,6 +77,8 @@ words.each do |word|
 end
 ```
 
+This is O(n*m) because for each element in words, we visit each element in endings. 
+
 Snippet 6 - Big O:
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
@@ -77,6 +87,8 @@ def print_array(array)
     array.each {|num| puts num}
 end
 ```
+
+O(n) - each element gets puts-ed once
 
 Snippet 7 - Big O:
 ```ruby
@@ -92,6 +104,10 @@ Snippet 7 - Big O:
 end
 ```
 
+The above is O(n^2) since we have a nested loop that might need to go over all the (unsorted) elements again.
+When I tried this code, I noticed it wouldn't run, and I believe the reason is an index error. The range should start at 1, and the while loop condition should be i >= 0.
+
+
 Snippet 8 - Big O:
 ```ruby
 # this is selection sort
@@ -103,3 +119,5 @@ n.times do |i|
   a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
 ```
+
+This is also O(n^2) due to nested loops looping over each element to be sorted.
