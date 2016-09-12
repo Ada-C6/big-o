@@ -21,6 +21,7 @@ def largest?(array, value)
   end
   return true
 end
+#This is O(n) because the longer the array, the longer this program would take
 ```
 
 Snippet 2 - Big O:
@@ -35,6 +36,7 @@ def info_dump(customers)
     puts "#{customer[:country]}"
   end
 end
+# This is O(n) because you are doing the same operation on ever element
 ```
 
 Snippet 3 - Big O:
@@ -42,6 +44,7 @@ Snippet 3 - Big O:
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
+#This is O(1) as the completion time is consistent (you are always looking at the first element)
 ```
 
 Snippet 4 - Big O:
@@ -55,6 +58,7 @@ def duplicates?(array)
   end
   false
 end
+# This is O(n^2) as you are taking apart the array and then searching the values and comparing them
 ```
 
 Snippet 5 - Big O:
@@ -67,6 +71,7 @@ words.each do |word|
     puts word + ending
   end
 end
+# This is O(n) as the completion is dependent on the number of elements in an array
 ```
 
 Snippet 6 - Big O:
@@ -76,6 +81,7 @@ numbers = [1,2,3,4,5,6,7,8,9,10]
 def print_array(array)
     array.each {|num| puts num}
 end
+# I want to say O(n) as this is simply printing the elements of an array
 ```
 
 Snippet 7 - Big O:
@@ -90,6 +96,7 @@ Snippet 7 - Big O:
     end
     num[i+1] = key
 end
+# This is O(n^2) the efficiency is directly proportional to the size of the data
 ```
 
 Snippet 8 - Big O:
@@ -102,4 +109,5 @@ n.times do |i|
   end
   a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
+# This is also O(n^2) (possibly 3?) As again more elements will affect the  time of this program
 ```
