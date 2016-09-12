@@ -23,6 +23,8 @@ def largest?(array, value)
 end
 ```
 
+* SNIPPET 1: O(n) linear
+
 Snippet 2 - Big O:
 ```ruby
 def info_dump(customers)
@@ -37,12 +39,16 @@ def info_dump(customers)
 end
 ```
 
+* SNIPPET 2: 0(n) linear (because the each loops are separate)
+
 Snippet 3 - Big O:
 ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
+
+* SNIPPET 3: 0(1) constant time
 
 Snippet 4 - Big O:
 ```ruby
@@ -57,6 +63,8 @@ def duplicates?(array)
 end
 ```
 
+* SNIPPET 4: 0(n^2) quadratic (it's that or 0(n*m) but I admittedly don't understand that one)
+
 Snippet 5 - Big O:
 ```ruby
 words = [chocolate, coconut, rainbow]
@@ -69,6 +77,8 @@ words.each do |word|
 end
 ```
 
+* SNIPPET 5: 0(n) linear (only because the inside loop is constant)
+
 Snippet 6 - Big O:
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
@@ -77,6 +87,8 @@ def print_array(array)
     array.each {|num| puts num}
 end
 ```
+
+* SNIPPET 6: 0(n) linear
 
 Snippet 7 - Big O:
 ```ruby
@@ -92,6 +104,8 @@ Snippet 7 - Big O:
 end
 ```
 
+* SNIPPET 7: 0(n^2) quadratic
+
 Snippet 8 - Big O:
 ```ruby
 # this is selection sort
@@ -103,3 +117,5 @@ n.times do |i|
   a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
 ```
+
+* SNIPPET 8: 0(n^2)quadratic
