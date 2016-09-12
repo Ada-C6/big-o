@@ -13,7 +13,8 @@ Give the efficiency of each of the following code snippets.
 
 ### Problems for you
 
-Snippet 1 - Big O:
+Snippet 1 - Big O: ==> This is O(n) because in the worst case, because as the array's size increases, the number of iterations through the array increases linearly.
+
 ```ruby
 def largest?(array, value)
   array.each do |item|
@@ -23,7 +24,8 @@ def largest?(array, value)
 end
 ```
 
-Snippet 2 - Big O:
+Snippet 2 - Big O: ==> This is O(2n) because when the array's size increases, the number of iterations through the array increases linearly.
+
 ```ruby
 def info_dump(customers)
   puts "Customer Names: "
@@ -37,14 +39,16 @@ def info_dump(customers)
 end
 ```
 
-Snippet 3 - Big O:
+Snippet 3 - Big O: ==> This is O(1) because there is only 1 execution regardless of the array's size
+
 ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
 
-Snippet 4 - Big O:
+Snippet 4 - Big O: ==> This is O(n^2) because when the array's size increases with n inputs, the number of additional iterations is equal to n^2.
+
 ```ruby
 def duplicates?(array)
   array.each_with_index do |item1, index1|
@@ -57,7 +61,8 @@ def duplicates?(array)
 end
 ```
 
-Snippet 5 - Big O:
+Snippet 5 - Big O: ==> This is O(m*n), m = words.length, n = endings.length. We are having n*m combinations of a unique words' element and a unique endings' element.
+
 ```ruby
 words = [chocolate, coconut, rainbow]
 endings = [cookie, pie, waffle]
@@ -69,7 +74,8 @@ words.each do |word|
 end
 ```
 
-Snippet 6 - Big O:
+Snippet 6 - Big O: ==> This is O(n). There is 1 loop of iteration through the array.
+
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
@@ -78,7 +84,8 @@ def print_array(array)
 end
 ```
 
-Snippet 7 - Big O:
+Snippet 7 - Big O: ==> This is O(n^2). Reason: 1 loop nested in another loop.
+
 ```ruby
 # this is insertion sort
 (2..num.length).each do |j|
@@ -92,7 +99,8 @@ Snippet 7 - Big O:
 end
 ```
 
-Snippet 8 - Big O:
+Snippet 8 - Big O: ==> This is O(n^2). Reason: 1 loop nested in another loop.
+
 ```ruby
 # this is selection sort
 n.times do |i|
