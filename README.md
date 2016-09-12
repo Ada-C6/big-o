@@ -22,6 +22,8 @@ def largest?(array, value)
   return true
 end
 ```
+ANSWER: O(n) - this is linear, as the size of the array increases, so does the time to process
+
 
 Snippet 2 - Big O:
 ```ruby
@@ -37,12 +39,16 @@ def info_dump(customers)
 end
 ```
 
+ANSWER: O(n) - each loop has O(n), but as there are two we would add them and ignore the coefficient, resulting in O(n)
+
 Snippet 3 - Big O:
 ```ruby
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
+
+ANSWER: Constant - there is only ever one item being looked at
 
 Snippet 4 - Big O:
 ```ruby
@@ -57,6 +63,8 @@ def duplicates?(array)
 end
 ```
 
+ANSWER: O(n**2) - there is a loop within a loop, and each has a big-o of n
+
 Snippet 5 - Big O:
 ```ruby
 words = [chocolate, coconut, rainbow]
@@ -69,6 +77,8 @@ words.each do |word|
 end
 ```
 
+ANSWER: Constant - normally this would be O(n*m), but as we know the size of words and values is constant, this set of loops would also be constant
+
 Snippet 6 - Big O:
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
@@ -77,6 +87,8 @@ def print_array(array)
     array.each {|num| puts num}
 end
 ```
+
+ANSWER: O(n) - as the array grows, so does the time to process, if we used the numbers array, it would be constant, but there is no indication that we are
 
 Snippet 7 - Big O:
 ```ruby
@@ -92,6 +104,8 @@ Snippet 7 - Big O:
 end
 ```
 
+ANSWER: O(n**2)
+
 Snippet 8 - Big O:
 ```ruby
 # this is selection sort
@@ -103,3 +117,5 @@ n.times do |i|
   a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
 ```
+
+ANSWER: O(n**2) - loop within a loop
