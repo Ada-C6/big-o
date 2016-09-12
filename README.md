@@ -14,7 +14,8 @@ Give the efficiency of each of the following code snippets.
 ### Problems for you
 
 Snippet 1 - Big O: n
-*O(n): for the worst case scenario, each element in the array will be checked and then none of them will be greater than the value*
+
+**O(n): for the worst case scenario, each element in the array will be checked and then none of them will be greater than the value**
 ```ruby
 def largest?(array, value)
   array.each do |item|
@@ -25,7 +26,8 @@ end
 ```
 
 Snippet 2 - Big O:(n)
-*O(n+n)=(2n)=(n): each element will be checked twice, but in separate operations*
+
+**O(n+n)=(2n)=(n): each element will be checked twice, but in separate operations**
 ```ruby
 def info_dump(customers)
   puts "Customer Names: "
@@ -48,7 +50,8 @@ end
 ```
 
 Snippet 4 - Big O: (n^2)
-*O(n^2): contains nested loops; each item in the array will have to be visted for the first .each and for every element, the array will also need to be visited array.length times to check if that value occurs again.*
+
+**O(n^2): contains nested loops; each item in the array will have to be visted for the first .each and for every element, the array will also need to be visited array.length times to check if that value occurs again.**
 ```ruby
 def duplicates?(array)
   array.each_with_index do |item1, index1|
@@ -62,7 +65,8 @@ end
 ```
 
 Snippet 5 - Big O:(n^2)
-*O(n^2):contains nested loops; each word will have to be printed endings.length times with ending concatenated with it*
+
+**O(n^2):contains nested loops; each word will have to be printed endings.length times with ending concatenated with it**
 ```ruby
 words = [chocolate, coconut, rainbow]
 endings = [cookie, pie, waffle]
@@ -75,7 +79,8 @@ end
 ```
 
 Snippet 6 - Big O:(n)
-*O(n): only requires every item in array to be visted once*
+
+**O(n): only requires every item in array to be visted once**
 ```ruby
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
@@ -85,7 +90,8 @@ end
 ```
 
 Snippet 7 - Big O: (n^2)
-*O(n^2):contains nested loops*
+
+**O(n^2):contains nested loops**
 ```ruby
 # this is insertion sort
 (2..num.length).each do |j|
@@ -100,7 +106,8 @@ end
 ```
 
 Snippet 8 - Big O: (n^2)
-*O(n^2):contains nested loops*
+
+**O(n^2):contains nested loops**
 ```ruby
 # this is selection sort
 n.times do |i|
