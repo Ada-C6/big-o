@@ -13,7 +13,7 @@ Give the efficiency of each of the following code snippets.
 
 ### Problems for you
 
-Snippet 1 - Big O: ==> This is O(n) because in the worst case, because as the array's size increases, the number of iterations through the array increases linearly.
+Snippet 1 - Big O: ==> This is O(n) because in the worst case, as the array's size increases, the number of iterations through the array increases linearly.
 
 ```ruby
 def largest?(array, value)
@@ -61,7 +61,7 @@ def duplicates?(array)
 end
 ```
 
-Snippet 5 - Big O: ==> This is O(m*n), m = words.length, n = endings.length. We are having n*m combinations of a unique words' element and a unique endings' element.
+Snippet 5 - Big O: ==> This is O(m x n), m = words.length, n = endings.length. We are having m x n combinations of a unique words' element and a unique endings' element.
 
 ```ruby
 words = [chocolate, coconut, rainbow]
