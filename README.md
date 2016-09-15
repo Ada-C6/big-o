@@ -21,6 +21,8 @@ def largest?(array, value)
   end
   return true
 end
+
+puts "Answer: O(n)"
 ```
 
 Snippet 2 - Big O:
@@ -35,6 +37,8 @@ def info_dump(customers)
     puts "#{customer[:country]}"
   end
 end
+
+puts "Answer: O(n)"
 ```
 
 Snippet 3 - Big O:
@@ -42,6 +46,8 @@ Snippet 3 - Big O:
 def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
+
+puts "Answer: O(1)"
 ```
 
 Snippet 4 - Big O:
@@ -55,6 +61,9 @@ def duplicates?(array)
   end
   false
 end
+puts "( O(1)* O(n) ) * O(n)"
+puts "O(n) * O(n)"
+puts "Answer: O(n^2)"
 ```
 
 Snippet 5 - Big O:
@@ -67,6 +76,8 @@ words.each do |word|
     puts word + ending
   end
 end
+
+puts "Answer: O(n*m)"
 ```
 
 Snippet 6 - Big O:
@@ -76,6 +87,8 @@ numbers = [1,2,3,4,5,6,7,8,9,10]
 def print_array(array)
     array.each {|num| puts num}
 end
+
+puts "Answer: O(n)"
 ```
 
 Snippet 7 - Big O:
@@ -90,6 +103,8 @@ Snippet 7 - Big O:
     end
     num[i+1] = key
 end
+puts "O(1)* O(log n)"
+puts "Answer: O(log n)"
 ```
 
 Snippet 8 - Big O:
@@ -102,4 +117,6 @@ n.times do |i|
   end
   a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
+puts "Answer: O(1) * O(log n)"
+puts "Answer: O(log n)"
 ```
